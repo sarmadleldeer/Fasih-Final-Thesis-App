@@ -51,10 +51,11 @@ if wav_audio_data is not None:
         else:
             emotion = 'Unknown'
         st.balloons()
+        st.divider()
         multi = f'''Your emotional state sounds like {emotion}
         but then I could be wrong too. We often mask them with a smile or two.
         '''
-        st.markdown(multi)
+        st.header(multi)
         
     # Clean up temporary file
     os.remove(temp_file_path)
