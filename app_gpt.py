@@ -13,8 +13,7 @@ logo_path = Path(__file__).parent / "fasih logo ai.png"
 st.header("Speech-Emotion Recognition", divider = 'red')
 st.subheader("Let's Look Inside Your Emotions :heart:")
 
-with st.sidebar:
-    st.image(logo_path)
+st.image('fasih logo ai.png')
 
 # Read model from pickle file
 with open(model_path, "rb") as model_file:
