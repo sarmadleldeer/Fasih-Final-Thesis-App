@@ -41,6 +41,7 @@ if wav_audio_data is not None:
         
         if pred == 1:
             emotion = 'Happy'
+            st.baloons()
         elif pred == 2:
             emotion = 'Sad'
         elif pred == 3:
