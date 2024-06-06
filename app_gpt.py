@@ -52,7 +52,7 @@ if wav_audio_data is not None:
             emotion = 'Unknown'
         st.balloons()
         st.divider()
-        multi = f'''Your emotional state sounds like {emotion}
+        multi = f'''Your emotional state sounds like :red[{emotion}]
         but then I could be wrong too. We often mask them with a smile or two.
         '''
         st.header(multi)
