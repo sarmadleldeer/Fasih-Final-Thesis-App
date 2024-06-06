@@ -9,7 +9,8 @@ from pathlib import Path
 
 model_path = Path(__file__).parent / "mlp_classifier.model"
 
-st.title("Let's Look Inside Your Emotions :heart:")
+st.header("Let's Look Inside Your Emotions :heart:", divider='rainbow')
+st.header("Speech-Emotion Recognition")
 
 # Read model from pickle file
 with open(model_path, "rb") as model_file:
@@ -50,7 +51,10 @@ if wav_audio_data is not None:
         else:
             emotion = 'Unknown'
         st.balloons()
-        st.write(f'Emotion: {emotion}')
+        multi = f'''Your emotional state sounds like {emotion}
+        but then I could be wrong too. We often mask them with a smile or two.
+        '''
+        st.markdown(multi)
         
     # Clean up temporary file
     os.remove(temp_file_path)
