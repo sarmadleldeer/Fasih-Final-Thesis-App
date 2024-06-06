@@ -34,7 +34,6 @@ if wav_audio_data is not None:
         temp_file_path = temp_audio_file.name
 
     st.audio(temp_file_path, format='audio/wav')
-    st.write("Analyzing your emotions...")
 
     if st.button("Analyze your emotions now"):
         pred = get_prediction(temp_file_path)
