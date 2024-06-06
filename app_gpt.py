@@ -5,6 +5,7 @@ import os
 import librosa
 import pickle
 import tempfile
+from pathlib import Path
 
 model_path = Path(__file__).parent / "mlp_classifier.model"
 
