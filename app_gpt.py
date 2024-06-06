@@ -8,10 +8,13 @@ import tempfile
 from pathlib import Path
 
 model_path = Path(__file__).parent / "mlp_classifier.model"
+logo_path = Path(__file__).parent / "fasih logo ai.png"
 
 st.header("Speech-Emotion Recognition", divider = 'red')
 st.subheader("Let's Look Inside Your Emotions :heart:")
 
+with st.sidebar:
+    st.logo(logo_path)
 
 # Read model from pickle file
 with open(model_path, "rb") as model_file:
