@@ -41,7 +41,7 @@ if wav_audio_data is not None:
         
         if pred == 1:
             emotion = 'Happy'
-            st.baloons()
+            st.balloons()
         elif pred == 2:
             emotion = 'Sad'
         elif pred == 3:
@@ -50,7 +50,7 @@ if wav_audio_data is not None:
             emotion = 'Neutral'
         else:
             emotion = 'Unknown'
-        
+        st.balloons()
         st.write(f'Emotion: {emotion}')
         
     # Clean up temporary file
