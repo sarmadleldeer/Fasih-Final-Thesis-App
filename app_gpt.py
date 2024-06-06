@@ -9,8 +9,9 @@ from pathlib import Path
 
 model_path = Path(__file__).parent / "mlp_classifier.model"
 
-st.header("Let's Look Inside Your Emotions :heart:", divider='rainbow')
-st.header("Speech-Emotion Recognition")
+st.header("Speech-Emotion Recognition", divider = 'red')
+st.subheader("Let's Look Inside Your Emotions :heart:")
+
 
 # Read model from pickle file
 with open(model_path, "rb") as model_file:
