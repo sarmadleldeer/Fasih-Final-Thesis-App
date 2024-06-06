@@ -1,0 +1,10 @@
+pandas
+streamlit
+numpy
+st_audiorec
+os
+librosa
+pickle
+tempfile
+sklearn
+tensorflow
