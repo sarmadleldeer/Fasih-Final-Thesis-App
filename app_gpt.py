@@ -14,7 +14,7 @@ st.header("Speech-Emotion Recognition", divider = 'red')
 st.subheader("Let's Look Inside Your Emotions :heart:")
 
 with st.sidebar:
-    st.logo(logo_path)
+    st.image(logo_path)
 
 # Read model from pickle file
 with open(model_path, "rb") as model_file:
