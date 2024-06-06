@@ -6,10 +6,12 @@ import librosa
 import pickle
 import tempfile
 
+model_path = (Path(__file__).parent / "mlp_classifier.model").absolute()
+
 st.title("Let's Look Inside Your Emotions :heart:")
 
 # Read model from pickle file
-model = pickle.load(open("result/mlp_classifier.model", "rb"))
+model = pickle.load(open(model_path, "rb"))
 
 wav_audio_data = st_audiorec()
 
