@@ -10,10 +10,23 @@ from pathlib import Path
 model_path = Path(__file__).parent / "mlp_classifier.model"
 logo_path = Path(__file__).parent / "fasih logo ai.png"
 
-st.image('fasih logo ai.png', width =200)
+col1, col2, col3 = st.columns(3)
 
-st.header("Speech-Emotion Recognition", divider = 'red')
-st.subheader("Let's Look Inside Your Emotions :heart:")
+with col1:
+    st.write(' ')
+
+with col2:
+    st.image('fasih logo ai.png', width =200)
+    st.header("Speech-Emotion Recognition", divider = 'red')
+    st.subheader("Let's Look Inside Your Emotions :heart:")
+
+with col3:
+    st.write(' ')
+
+#st.image('fasih logo ai.png', width =200)
+
+#st.header("Speech-Emotion Recognition", divider = 'red')
+#st.subheader("Let's Look Inside Your Emotions :heart:")
 
 
 
