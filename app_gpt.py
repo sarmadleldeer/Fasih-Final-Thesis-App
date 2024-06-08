@@ -16,17 +16,15 @@ with col1:
     st.write(' ')
 
 with col2:
-    st.image('fasih logo ai.png', width =200)
-    st.header("Speech-Emotion Recognition", divider = 'red')
-    st.subheader("Let's Look Inside Your Emotions :heart:")
+    st.image('fasih logo ai.png', width =200
 
 with col3:
     st.write(' ')
 
 #st.image('fasih logo ai.png', width =200)
 
-#st.header("Speech-Emotion Recognition", divider = 'red')
-#st.subheader("Let's Look Inside Your Emotions :heart:")
+st.header("Speech-Emotion Recognition", divider = 'red')
+st.subheader("Let's Look Inside Your Emotions :heart:")
 
 
 
