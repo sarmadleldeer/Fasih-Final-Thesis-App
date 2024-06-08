@@ -16,7 +16,7 @@ with col1:
     st.write(' ')
 
 with col2:
-    st.image('fasih logo ai.png', width =200
+    st.image('fasih logo ai.png', width =200)
 
 with col3:
     st.write(' ')
