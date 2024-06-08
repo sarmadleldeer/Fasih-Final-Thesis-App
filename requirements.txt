@@ -3,4 +3,3 @@ streamlit
 numpy
 streamlit-audiorec
 librosa
-scikit-learn
